@@ -11,8 +11,8 @@ export default function Home() {
         <View className="flex-row items-center justify-center">
           <Image source={require("../assets/avatar.png")} />
           <View className="ml-2">
-            <Text className="text-base">Welcome to</Text>
-            <Text className="text-lg font-bold">Sample restaurant</Text>
+            <Text className="text-lg">Welcome to</Text>
+            <Text className="text-xl font-bold">Sample restaurant</Text>
           </View>
         </View>
         <View className="flex-row items-center bg-slate-200 px-2 rounded-full">
@@ -26,7 +26,7 @@ export default function Home() {
         <View>
           <Image source={require("../assets/storePickup.png")} />
           <View className="items-center mt-2">
-            <Text className="text-xl font-bold">Store pickup</Text>
+            <Text className="text-xl font-semibold">Store pickup</Text>
             <Text className="text-base text-gray-500">Best quality</Text>
           </View>
         </View>
@@ -34,7 +34,7 @@ export default function Home() {
         <View>
           <Image source={require("../assets/delivery.png")} />
           <View className="items-center mt-2">
-            <Text className="text-xl font-bold">Delivery</Text>
+            <Text className="text-xl font-semibold">Delivery</Text>
             <Text className="text-base text-gray-500">Always on time</Text>
           </View>
         </View>
@@ -42,7 +42,7 @@ export default function Home() {
       <View className="bg-white rounded-lg p-4">
         <View className="flex-row items-center justify-between">
           <View>
-            <Text className="text-xl font-bold">Online reservation</Text>
+            <Text className="text-xl font-semibold">Online reservation</Text>
             <Text className="text-base text-gray-500">Table booking</Text>
           </View>
           <Image source={require("../assets/reservation.png")} />

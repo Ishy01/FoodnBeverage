@@ -9,14 +9,18 @@ import { NavigationContainer } from "@react-navigation/native";
 import { AntDesign } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Foundation } from '@expo/vector-icons';
-import { Entypo } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
 
 export default function Tabs() {
   return (
     <NavigationContainer>
-      <Tab.Navigator screenOptions={{headerShown: false, tabBarStyle: {height: 70}}}>
+      <Tab.Navigator 
+      screenOptions={{
+        headerShown: false, 
+        tabBarStyle: {height: 70 },
+        tabBarLabelStyle: {fontSize: 15}
+        }}>
         <Tab.Screen 
         name="Home" 
         component={Home}

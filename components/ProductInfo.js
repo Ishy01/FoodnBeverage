@@ -30,17 +30,20 @@ const productInfo = [
 
 export default function ProductInfo() {
   return (
-    <View className="flex-row flex-wrap mt-8 justify-between">
-      {productInfo.map((info, index) => {
-        return (
-          <View key={index}>
-            <Image source={info.image} />
-            <Text>{info.discount}</Text>
-            <Text>{info.discount2}</Text>
-            <Text>{info.duration}</Text>
-          </View>
-        );
-      })}
-    </View>
+    <>
+      <Text className="mt-6 text-xl font-bold">Promotion campaign</Text>
+      <View className="flex-row flex-wrap mt-3 justify-between">
+        {productInfo.map((info, index) => {
+          return (
+            <View key={index} className="mb-5">
+              <Image source={info.image} className="mb-2" />
+              <Text className="text-lg font-medium">{info.discount}</Text>
+              <Text className="text-lg font-medium">{info.discount2}</Text>
+              <Text className="text-gray-500">{info.duration}</Text>
+            </View>
+          );
+        })}
+      </View>
+    </>
   );
 }
